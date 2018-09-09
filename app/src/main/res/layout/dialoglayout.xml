@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SearchView
+        android:id="@+id/serachView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tooltipText="Masukan kata"/>
+
+    <TextView
+        android:id="@+id/ss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter"
+        android:textSize="20dp"
+        android:layout_below="@+id/serachView"
+        android:layout_margin="5dp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ss"
+        android:layout_below="@+id/serachView"
+        android:layout_margin="5dp" />
+
+   <ListView
+       android:id="@+id/listView"
+       android:layout_width="match_parent"
+       android:layout_height="fill_parent"
+       android:layout_below="@id/spinner"/>
+
+    <Button
+       android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ss"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/ss"
+        android:text="Cancel"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
